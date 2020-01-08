@@ -1,0 +1,3 @@
+[build]
+command = "pelican"
+publish = "output"
