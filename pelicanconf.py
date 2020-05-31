@@ -4,6 +4,9 @@ import os
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
 
+for var in os.environ:
+    log.info(f'{var}: {os.getenv(var)}')
+
 ARCHIVES_SAVE_AS = ''
 ARTICLE_EXCLUDES = ['admin']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{urlname}.html'
@@ -41,20 +44,3 @@ TAGS_SAVE_AS = ''
 THEME = 'themes/andromeda'
 TIMEZONE = 'America/Chicago'
 TRANSLATION_FEED_ATOM = None
-
-context = os.getenv('CONTEXT')
-url = os.getenv('URL')
-deploy_url = os.getenv('DEPLOY_URL')
-deploy_prime_url = os.getenv('DEPLOY_PRIME_URL')
-
-log.info(f'CONTEXT: {context}')
-log.info(f'URL: {url}')
-log.info(f'DEPLOY_URL: {deploy_url}')
-log.info(f'DEPLOY_PRIME_URL {deploy_prime_url}')
-
-if context == 'production':
-    FEED_DOMAIN = url
-    SITEURL = url
-else:
-    FEED_DOMAIN = deploy_prime_url
-    SITEURL = deploy_prime_url
