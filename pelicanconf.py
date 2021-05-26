@@ -4,8 +4,8 @@ import os
 log = logging.getLogger(__name__)
 log.setLevel(logging.INFO)
 
-for var in os.environ:
-    log.info(f'{var}: {os.getenv(var)}')
+for key in sorted(os.environ):
+    log.info(f'{key}: {os.getenv(key)}')
 
 ARCHIVES_SAVE_AS = ''
 ARTICLE_EXCLUDES = ['admin']
