@@ -1,0 +1,16 @@
+services:
+  build:
+    command:
+      - build
+    image: ghcr.io/williamjacksn/netlify-cli
+    init: true
+    volumes:
+      - ./:/project
+
+  shell:
+    entrypoint:
+      - /bin/sh
+    image: ghcr.io/williamjacksn/netlify-cli
+    init: true
+    volumes:
+      - ./:/project
