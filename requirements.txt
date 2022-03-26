@@ -12,11 +12,11 @@ docutils==0.18.1
     # via pelican
 feedgenerator==2.0.0
     # via pelican
-jinja2==3.0.3
+jinja2==3.1.1
     # via pelican
 markdown==3.3.6
     # via pelican
-markupsafe==2.1.0
+markupsafe==2.1.1
     # via jinja2
 pelican[markdown]==4.7.2
     # via -r requirements.in
@@ -26,11 +26,11 @@ pygments==2.11.2
     #   rich
 python-dateutil==2.8.2
     # via pelican
-pytz==2021.3
+pytz==2022.1
     # via
     #   feedgenerator
     #   pelican
-rich==12.0.0
+rich==12.0.1
     # via pelican
 six==1.16.0
     # via python-dateutil
