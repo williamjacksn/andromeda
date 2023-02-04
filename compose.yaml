@@ -14,3 +14,9 @@ services:
     init: true
     volumes:
       - ./:/project
+
+  pel-build:
+    image: ghcr.io/williamjacksn/pelican
+    init: true
+    volumes:
+      - ./:/pelican-site
