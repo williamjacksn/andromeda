@@ -1,5 +1,5 @@
 services:
-  build:
+  ntl-build:
     command:
       - build
     image: ghcr.io/williamjacksn/netlify-cli
@@ -7,7 +7,7 @@ services:
     volumes:
       - ./:/project
 
-  shell:
+  ntl-shell:
     entrypoint:
       - /bin/sh
     image: ghcr.io/williamjacksn/netlify-cli
