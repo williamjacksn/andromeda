@@ -25,7 +25,7 @@ jobs:
         uses: actions/configure-pages@v3
       - name: Build with Pelican
         run: |
-          docker compose run --no-TTY --user="$(id -u):$(id -g)" pel-build
+          docker compose run --no-TTY --user="$(id -u):$(id -g)" build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

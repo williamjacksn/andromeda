@@ -1,22 +1,6 @@
 services:
-  ntl-build:
-    command:
-      - build
-    image: ghcr.io/williamjacksn/netlify-cli
-    init: true
-    volumes:
-      - ./:/project
-
-  ntl-shell:
-    entrypoint:
-      - /bin/sh
-    image: ghcr.io/williamjacksn/netlify-cli
-    init: true
-    volumes:
-      - ./:/project
-
-  pel-build:
-    image: ghcr.io/williamjacksn/pelican
+  build:
+    image: ghcr.io/williamjacksn/pelican:4.8.0
     init: true
     volumes:
       - ./:/pelican-site
