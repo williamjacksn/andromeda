@@ -1,6 +1,6 @@
 services:
   build:
-    image: ghcr.io/williamjacksn/pelican:4.9.1
+    image: ghcr.io/williamjacksn/pelican:4.10.0
     init: true
     volumes:
       - ./:/pelican-site
