@@ -8,7 +8,6 @@ for key in sorted(os.environ):
     log.info(f'{key}: {os.getenv(key)}')
 
 ARCHIVES_SAVE_AS = ''
-ARTICLE_EXCLUDES = ['admin']
 ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{date:%d}/{urlname}.html'
 ARTICLE_URL = '{date:%Y}/{date:%m}/{date:%d}/{urlname}'
 AUTHOR = 'William'
@@ -38,7 +37,7 @@ RELATIVE_URLS = False
 SITENAME = 'Andromeda'
 SITESUBTITLE = 'One of the constellations'
 STATIC_CHECK_IF_MODIFIED = True
-STATIC_PATHS = ['admin', 'images']
+STATIC_PATHS = ['images']
 TAG_SAVE_AS = ''
 TAGS_SAVE_AS = ''
 THEME = 'themes/andromeda'
