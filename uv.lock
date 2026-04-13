@@ -11,7 +11,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "pelican", extras = ["markdown"], specifier = ">=4.11.0" }]
+requires-dist = [{ name = "pelican", extras = ["markdown"], specifier = ">=4.11.0.post0" }]
 
 [[package]]
 name = "anyio"
